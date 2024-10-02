@@ -1,0 +1,13 @@
+Code Explaination:
+Inputs:
+	a and b are the inputs to the gates. Here, b is used as the select line for the 2:1 multiplexer.
+Outputs:
+	y_and is the output for the AND gate.
+	y_or is the output for the OR gate.
+	y_not is the output for the NOT gate.
+	y_nand is the output for the NAND gate.
+	y_nor is the output for the NOR gate.
+	y_xor is the output for the XOR gate.
+	y_xnor is the output for the XNOR gate.
+
+For each gate, the MUX selects either I0 or I1 based on the logic required by the specific gate. The select line (b) determines which input is passed to the output.
