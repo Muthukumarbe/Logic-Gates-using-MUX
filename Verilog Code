@@ -1,0 +1,29 @@
+`timescale 1ns / 1ps
+
+module gatemux(
+    input a,
+    input b,
+    output y_and,
+    output y_or,
+    output y_not,
+    output y_nand,
+    output y_nor,
+    output y_xor,
+    output y_xnor
+    );
+//AND Gate
+assign y_and =(b==0)?0:a;
+//OR Gate
+assign y_or =(b==0)?a:1;
+//NOT Gate
+assign y_not =(a==0)?1:0;
+//NAND Gate
+assign y_nand =(b==0)?1:~a;
+//NOR Gate
+assign y_nor =(b==0)?~a:0;
+//XOR Gate
+assign y_xor =(b==0)?a:~a;
+//XNOR Gate
+assign y_xnor =(b==0)?~a:a;
+
+endmodule
